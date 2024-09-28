@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher>
+	<Group caption="機体・成長系 》">
+		<Cmd caption="アセンブル"                    url="menu/equip"/>
+		<Cmd caption="インベントリ"                  url="menu/inventory"/>
+		<Cmd caption="OS成長"                        url="menu/osUpdate"/>
+		<Cmd caption="機体データ(通常)"              url="menu/acData"/>
+		<Cmd caption="機体データ(インゲーム用)"      url="menu/acData_ingame"/>
+	</Group>
+	<Group caption="ペイント系 》">
+		<Cmd caption="カラーリング"                  url="menu/coloring"/>
+		<Cmd caption="エンブレム編集"                url="menu/emblemEdit"/>
+		<Cmd caption="デカール貼り付け"              url="menu/decal"/>
+		<Cmd caption="プリセットカラー選択"          url="util/presetColorSelect"/>
+		<Cmd caption="プリセットテクスチャ選択"      url="util/presetTextureSelect"/>
+	</Group>
+	<Group caption="ショップ系 》">
+		<Cmd caption="試着購入"                      url="menu/tryonShop"/>
+		<Cmd caption="パーツ購入"                    url="menu/partsBuy"/>
+		<Cmd caption="パーツ売却"                    url="menu/partsSell"/>
+		<Cmd caption="アリーナショップ"              url="menu/namePlateShop"/>
+		<Cmd caption="アイテム改造"                  url="menu/itemRenovation"/>
+		<Cmd caption="全アイテム所持"                url="util/addAllEquipments"/>
+		<Cmd caption="全素材所持"                    url="util/addAllMaterials"/>
+	</Group>
+	<Group caption="ミッション系 》">
+		<Cmd caption="ストーリーミッション"         url="menu/storyMission" grayout="func/DisabledStoryMission?alertMsg=216500"/>
+		<Cmd caption="全ストーリーミッション"       url="menu/debugMission?minID=1,maxID=99999999,missionType=0"/>
+		<Cmd caption="全トレーニングミッション"     url="menu/debugMission?minID=1,maxID=99999999,missionType=3"/>
+		<Cmd caption="５末プレゼン用ミッション"     url="menu/debugMission?minID=9250,maxID=9252,missionType=0"/>
+
+		<!-- メニュータイトル/1行ヘルプ/確認メッセージ の指定を省略⇒ID 216000がデフォルトで設定されます -->
+		<Cmd caption="ミッション(1～99999999)(テキスト指定省略)" url="menu/debugMission?minID=1,maxID=99999999"/>
+
+		<!-- メニュータイトル/1行ヘルプ/確認メッセージ をIDで指定 -->
+		<Cmd caption="ミッション(1～99999999)(テキストID指定)"   url="menu/debugMission?minID=1,maxID=99999999,titleID=216000,helpID=216000,confirmMsgID=216000"/>
+
+		<!-- メニュータイトル/1行ヘルプ/確認メッセージ を直書き -->
+		<Cmd caption="ミッション(1～99999999)(テキスト直書き)"   url="menu/debugMission?minID=1,maxID=99999999,title=ミッション(デバッグ用),help=ミッションを選択してください(デバッグ用),confirmMsg=出撃しますか？（デバッグ用)"/>
+
+		<Cmd caption="ミッションリトライ"           url="menu/missionRetry"/>
+		<Cmd caption="デブリーフィング(99801100)"   url="menu/missionDebriefing?ID=99801100"/>
+	</Group>
+	<Group caption="アーキタイプ変更 》">
+		<Cmd caption="デフォルト装備"                url="util/changePlayerInitParam?id=9000"/>
+		<Cmd caption="逆関節装備"                    url="util/changePlayerInitParam?id=9001"/>
+		<Cmd caption="タンク装備"                    url="util/changePlayerInitParam?id=9002"/>
+		<Cmd caption="四脚装備"                      url="util/changePlayerInitParam?id=9003"/>
+	</Group>
+	<Group caption="メニュー　一覧 》">
+		<Cmd caption="インベントリ"                  url="menu/inventory"/>
+		<Cmd caption="アセンブル"                    url="menu/equip"/>
+		<Cmd caption="簡易アセン"                    url="menu/weaponEquip"/>
+		
+		<Cmd caption="カラーリング"                  url="menu/coloring"/>
+		<Cmd caption="デカール貼り付け"              url="menu/decal"/>
+		<Cmd caption="エンブレム編集"                url="menu/emblemEdit"/>
+
+		<Cmd caption="ガレージヘリ呼び出し"          url="menu/garageHeli"/>
+		<Cmd caption="OS成長"                        url="menu/tuning"/>
+		<Cmd caption="ワープ"                        url="menu/warp"/>
+
+		<Cmd caption="試着購入"                      url="menu/tryonShop"/>
+		<Cmd caption="パーツ購入(1-99999999)"        url="menu/partsBuy"/>
+		<Cmd caption="パーツ売却"                    url="menu/partsSell"/>
+		<Cmd caption="アイテム改造"                  url="menu/itemRenovation"/>
+
+		<Cmd caption="拠点"                          url="menu/launcher?layout=BaseMenu_0000"/>
+
+		<Cmd caption="メール"                        url="menu/mailList"/>
+		<Cmd caption="全メール"                      url="menu/mailViewer"/>
+		<Cmd caption="アーカイブ"                    url="menu/archiveList"/>
+		<Cmd caption="全アーカイブ"                  url="menu/archiveViewer"/>
+
+		<Cmd caption="ゲームオプション"             url="menu/gameOption"/>
+		<Cmd caption="カメラオプション"             url="menu/cameraOption"/>
+		<Cmd caption="グラフィック設定"             url="menu/graphicsOption"/>
+		<Cmd caption="音響"                         url="menu/soundOption"/>
+		<Cmd caption="UI設定"                       url="menu/uiOption"/>
+		<Cmd caption="パッド設定"                   url="menu/padConfig"/>
+		<Cmd caption="キーボード設定"               url="menu/keyboardConfig"/>
+		<Cmd caption="輝度設定(SDR)"                url="menu/SDRsetting"/>
+		<Cmd caption="画質調整(HDR)"                url="menu/HDRsetting"/>
+		<Cmd caption="ゲーム終了"                   url="menu/quitGame"/>
+		<Cmd caption="トップメニュー"               url="menu/launcher?layout=TopMenu"/>
+		<Cmd caption="パイロットネーム"             url="menu/pilotName"/>
+		<Cmd caption="パイロットエンブレム"         url="menu/pilotEmblem"/>
+		<Cmd caption="チュートリアル閲覧"           url="menu/tutorialBrowser"/>
+		<Cmd caption="初回システム設定"             url="menu/firstSystemSetting"/>
+		<Cmd caption="NEW GAME プロファイル作成"    url="menu/createProfile"/>
+		<Cmd caption="報酬獲得"                     url="menu/gotRewardViewer"/>
+		<Cmd caption="メニューランチャーサンプル"   url="menu/launcher?layout=MenuLauncher_sample"/>
+	</Group>
+	<Cmd caption="チュートリアル 》"                url="util/tutorialViewer"/>	
+	<Cmd caption="ロード画面(うんちく) 》"          url="util/knowledgeLoadingViewer"/>	
+	<Cmd caption="ロード画面(出撃用) "              url="util/sortieLoading"/>	
+	<Cmd caption="ムービー 》"                      url="menu/launcher?layout=DebugMovieMenu"/>
+	<Group caption="スタッフロール 》">
+		<Cmd caption="Type A"                    	url="menu/staffRoll?type=0"/>
+		<Cmd caption="Type B"                    	url="menu/staffRoll?type=1"/>
+		<Cmd caption="Type C"                    	url="menu/staffRoll?type=2"/>
+	</Group>
+	<Group caption="デバッグ機能　一覧 》">
+		<Cmd caption="全アイテム所持"                url="util/addAllEquipments"/>
+		<Cmd caption="全素材所持"                    url="util/addAllMaterials"/>
+
+		<Cmd caption="デバッグセーブ"                url="util/dbgSave"/>
+		<Cmd caption="デバッグロード"                url="util/dbgListLoad"/>
+
+		<Cmd caption="デフォルト装備"                url="util/changePlayerInitParam?id=9000"/>
+		<Cmd caption="逆関節装備"                    url="util/changePlayerInitParam?id=9001"/>
+		<Cmd caption="タンク装備"                    url="util/changePlayerInitParam?id=9002"/>
+		<Cmd caption="四脚装備"                      url="util/changePlayerInitParam?id=9003"/>
+
+		<Cmd caption="プリセットカラー選択"          url="util/presetColorSelect"/>
+		<Cmd caption="プリセットテクスチャ選択"      url="util/presetTextureSelect"/>
+		<Cmd caption="メッセージボックステスト"      url="util/messageboxTest"/>
+
+		<Cmd caption="全メール受信"                  url="util/receiveAllMail"/>
+		<Cmd caption="キーアサイン関連タグ一覧"      url="util/keyAssignTagViewer"/>
+		<Cmd caption="テキスト埋込イメージ一覧"      url="util/textEmbedImageViewer"/>
+		
+		<Cmd caption="Glyph Check (Manual)"          url="util/dbgManualGlyphCheck"/>
+		<Cmd caption="Glyph Check"                   url="util/dbgGlyphCheck"/>
+	</Group>
+</MenuLauncher>

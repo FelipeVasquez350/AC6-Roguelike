@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher resource="02_PilotData_CommandList" titleID="243000" menuID="PilotData_CommandList" bgCameraCtrl="false">
+	<!-- PILOT NAME   --><Cmd captionID="243001" url="menu/pilotName"   autoHide="false"  />  
+	<!-- PILOT EMBLEM --><Cmd captionID="243002" url="menu/pilotEmblem" autoHide="false"  />
+	<!-- ARCHIVES     --><Cmd captionID="107001" url="menu/archiveList"  autoHide="false"/>
+	<!-- TUTORIALS    --><Cmd captionID="243004" url="menu/tutorialBrowser"  autoHide="false"/>
+</MenuLauncher>

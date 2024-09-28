@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher resource="01_MainMenu" titleID="120000" menuID="MainTop">
+	<!-- ASSEMBLE      --><Cmd captionID="102001" url="menu/equipForAcTest" preexec="util/preEquipMenu" autoHide="false"/>
+	<!-- ENEMY SETTING --><Cmd captionID="120010" url="menu/acTestSetting"/>
+	<!-- SUPPLY        --><Cmd captionID="120011" url="util/supplyForAcTest?msgID=120011" autoHide="false"/>
+	<!-- SYSTEM        --><Cmd captionID="120001" url="menu/optionTop" autoHide="false"/>
+	<!-- QUIT        --><Cmd captionID="120050" url="util/returnToGarage?msgID=120050" execOnce="true" autoHide="false"/>
+</MenuLauncher>

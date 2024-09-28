@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher resource="01_BaseMenu" title="BASE MENU">
+	<Cmd caption="ASSEMBLE"              url="menu/equip"/>
+	<Group caption="PAINT">
+		<Cmd caption="カラーリング"          url="menu/coloring"/>
+		<Cmd caption="エンブレム編集"        url="menu/emblemEdit"/>
+		<Cmd caption="デカール貼り付け"      url="menu/decal"/>
+	</Group>
+	<Group caption="SHOP">
+		<Cmd caption="購入(10～109999)"      url="menu/itemBuy?lineup_start=10,lineup_end=109999"/>
+		<Cmd caption="交換(110000～110999)"  url="menu/itemExchange?lineup_start=110000,lineup_end=110999"/>
+		<Cmd caption="売却"                  url="menu/itemSell"/>
+		<Cmd caption="強化"                  url="menu/itemRenovation"/>
+	</Group>
+	<Cmd caption="MAIL"                  url="menu/mailList"/>
+</MenuLauncher>

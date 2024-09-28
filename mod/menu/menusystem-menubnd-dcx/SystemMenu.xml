@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher resource="02_SystemTop" titleID="120001" photoMode="false">
+	<!-- ↓SYSTEMメニューでは id= で子ダイアログを指定するため、url=指定は不要  -->
+	<!-- ゲームオプション     --><Cmd id="0" captionID="400001" />
+	<!-- カメラオプション     --><Cmd id="1" captionID="400002" />
+	<!-- グラフィック設定     --><Cmd id="2" captionID="400021" />
+	<!-- 音響                 --><Cmd id="3" captionID="400006" />
+	<!-- ボタン設定           --><Cmd id="4" captionID="400010" />
+	<!-- ネットワーク設定     --><Cmd id="5" captionID="400004" />
+	<!-- 入力機器設定         --><Cmd id="6" captionID="400020" display="menuFeature/option_inputDevice"/>
+	<!-- 入力機器設定無し(空) --><NullCmd display="menuFeature/option_inputDevice?enabled=0"/>
+	<!-- UI設定が無くなった分 --><NullCmd/>
+	<!-- ↑ここまで id= で子ダイアログを指定するため、url=指定は不要  -->
+	<!-- ↓以下は子ダイアログが無いので url=指定が必要 -->
+	<!-- ↓【アプリケーション終了がある】↓ -->
+	<!-- 空                   --><NullCmd display="menuFeature/option_appQuit?enabled=0" grayout="func/IsMultiPlay"/>
+	<!-- タイトルへ戻る       --><Cmd captionID="400080" url="menu/quitGame" autoHide="false" display="menuFeature/option_appQuit?enabled=0" grayout="func/IsMultiPlay"/>
+	<!-- ↑【アプリケーション終了がある】↑ -->
+	<!-- ↓【アプリケーション終了がない】↓ -->
+	<!-- タイトルへ戻る       --><Cmd captionID="400080" url="menu/quitGame" autoHide="false" display="menuFeature/option_appQuit" grayout="func/IsMultiPlay"/>
+	<!-- アプリケーション終了 --><Cmd captionID="400090" url="menu/quitApp" autoHide="false" display="menuFeature/option_appQuit" grayout="func/IsMultiPlay"/>
+	<!-- ↑【アプリケーション終了がある】↑ -->
+
+	<!-- DEBUG            --><Cmd caption="DEBUG"    url="menu/launcher?layout=DebugTopMenu" display="debugonly"/>
+</MenuLauncher>

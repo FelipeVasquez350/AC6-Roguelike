@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  game.properties に
+  MenuMan.IngameTop = menu/launcher?layout=MenuLauncher_sample
+  を指定すると STARTボタン押下でこのメニューランチャーが起動します
+
+  タグごとに使用可能な属性
+
+  MenuLauncher タグ
+  ・resource="01_MainMenu"
+     メニューリソースを指定。以下が使用可能です
+       "01_MainMenu"
+       "01_BaseMenu"
+
+  ・titleID="123"
+     メニューのタイトルを メニューテキスト の IDで指定
+
+  ・title="タイトル文字列""
+     メニューのタイトルを文字列で指定。開発用機能です
+
+
+  Cmd タグ
+  ・url="xxxx"
+    項目選択時に実行するメニューを指定。urlの一覧は DebugTopMenu.xml を参照してください
+    グレイアウト時は実行されません
+
+  ・Name="コマンド名"
+    旧コマンド名指定。後述する caption/captionID を使用してください。近々廃止します。
+
+  ・execOnce="true"
+     コマンドの成功終了後にメニューを終了する
+     ※コマンドをキャンセル終了した時はメニューは終了せず、再実行可能
+     ※デフォルトは false で成功終了後も繰り返し実行可能
+
+  Cmd/Group タグ共通
+  ・captionID="123"
+     項目名を メニューテキスト の IDで指定
+
+  ・helpID="123"
+     1行ヘルプを ID で指定。captionID と同じ値の場合は省略できます
+
+  ・icon="xxx"
+     アイコンの指定
+     現在指定できるのは以下
+     "proxy/UnreadMails"  未読メールがある時にアイコン(2フレーム目)を表示
+
+  ・display="eventFlag/123"
+     指定IDのイベントフラグ が 1の時は表示、0の時は非表示
+
+  ・display="topmenuonly"
+	 トップメニュー(のマップ)のみ表示、その他マップでは非表示
+
+  ・display="debugonly"
+     デバッグ機能が有効な時のみ表示
+     デバッグ機能の有効/無効 は下記ゲームプロパティで指定します
+      MenuMan.EnableTopMenuDebug = true #トップメニューデバッグ有効設定（true:有効, false:無効）
+
+  ・grayout="eventFlag/123"
+     指定IDのイベントフラグ が 1の時はグレイアウト、0の時は通常表示
+     ※グレイアウト時は項目選択してもエラー音再生のみ
+
+  ・autoHide="false"
+     項目選択時にリストを表示したままにする
+     ※デフォルトは autoHide="true" で項目選択時にリストを非表示にします
+
+  ・caption="項目名"
+     項目名を文字列で指定。開発用機能です
+
+  ・help="１行ヘルプ"
+     1行ヘルプをテキストで指定。開発用機能です
+
+  NullCmd タグ
+    選択不可、非表示のコマンドを登録します
+
+-->
+
+<MenuLauncher resource="01_MainMenu" title="ランチャー">
+	<Cmd caption="項目名を直書き"                  helpID="242112"    url="menu/warp"/>
+	<NullCmd /> <!-- この項目は表示されません -->
+	<Cmd caption="項目名とヘルプを直書き" help="直書きのヘルプ" />
+	<Cmd caption="選択しても表示したまま" autoHide="false" url="menu/equip"/>
+	<Group caption="グレイアウト条件付き項目" help="イベントフラグ 1でグレイアウト切替" grayout="eventFlag/1">
+		<Cmd caption="表示条件付き子階層項目" help="イベントフラグ 2で表示切替" display="eventFlag/2"/>
+		<Cmd caption="子階層項目2" />
+	</Group>
+</MenuLauncher>

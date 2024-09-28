@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher resource="02_SystemTop" titleID="120001" photoMode="false">
+	<!-- ↓SYSTEMメニューでは id= で子ダイアログを指定するため、url=指定は不要  -->
+	<!-- ゲームオプション     --><Cmd id="0" captionID="400001" />
+	<!-- カメラオプション     --><Cmd id="1" captionID="400002" />
+	<!-- グラフィック設定     --><Cmd id="2" captionID="400021" />
+	<!-- 音響                 --><Cmd id="3" captionID="400006" />
+	<!-- ボタン設定           --><Cmd id="4" captionID="400010" />
+	<!-- ネットワーク設定     --><Cmd id="5" captionID="400004" />
+	<!-- 入力機器設定         --><Cmd id="6" captionID="400020" display="menuFeature/option_inputDevice"/>
+	<!-- UI設定が無くなった分 --><NullCmd/>
+	<!-- 入力機器設定無し(空) --><NullCmd display="menuFeature/option_inputDevice?enabled=0"/>
+	<!-- ↑ここまで id= で子ダイアログを指定するため、url=指定は不要  -->
+	<!-- ↓以下は子ダイアログが無いので url=指定が必要 -->
+	<!-- ↓【アプリケーション終了がある】↓ -->
+	<!-- 空                   --><NullCmd display="menuFeature/option_appQuit" />
+	<!-- アプリケーション終了 --><Cmd captionID="400090" url="menu/quitApp" autoHide="false" display="menuFeature/option_appQuit"/>
+	<!-- ↑【アプリケーション終了がある】↑ -->
+</MenuLauncher>

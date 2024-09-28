@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <MenuLauncher resource="01_MainMenu" titleID="254000" cancelDisable="true" menuID="MissionRetry" photoMode="false"> -->
+<MenuLauncher resource="01_MainMenu" title="Challenge Failed :(" cancelDisable="true" menuID="MissionRetry" photoMode="false">
+	<!-- RETRY FROM CHECKPOINT --><Cmd captionID="120004" url="util/retryMission_fromCheckPoint?msgID=120004" grayout="eventFlag/9998?value=1" grayout="func/DisabledRetryMissionFromCheckPoint" autoHide="false"/>
+	<!-- RETRY MISSION         --><Cmd captionID="120002" url="util/retryMission_fromStart?msgID=120002"      grayout="eventFlag/9998?value=1" autoHide="false"/>
+	<!-- RETIRE                --><Cmd captionID="120003" url="util/retireMission?msgID=120003"               grayout="func/DisabledRetireMission" autoHide="false"/>
+	
+	<!-- ASSEMBLE              --><Cmd captionID="102001" url="menu/equipForAcTest" grayout="eventFlag/9998?value=1" preexec="util/preEquipMenu" autoHide="false"/> <!-- 出撃不可状態で終了できない AcTest用のアセンブル画面を使用 -->
+	<!-- AC DATA               --><Cmd captionID="121000" url="menu/acData_ingame" grayout="eventFlag/9998?value=1" autoHide="false"/> <!-- インゲーム用の機体データ画面を使用 -->
+</MenuLauncher>

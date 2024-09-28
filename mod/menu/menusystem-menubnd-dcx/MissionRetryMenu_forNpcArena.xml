@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher resource="01_MainMenu" titleID="120022" cancelDisable="true" menuID="MissionRetry" photoMode="false">
+	<!-- RETRY  --><Cmd captionID="120020" url="util/retryMission_fromStart?msgID=120020" autoHide="false"/>
+	<!-- RETIRE --><Cmd captionID="120021" url="util/retireMission?msgID=120021"          autoHide="false"/>
+
+	<!-- ASSEMBLE              --><Cmd captionID="102001" url="menu/equipForAcTest" grayout="func/DisabledRetryAssemble" preexec="util/preEquipMenu" autoHide="false"/> <!-- 出撃不可状態で終了できない AcTest用のアセンブル画面を使用 -->
+	<!-- AC DATA               --><Cmd captionID="121000" url="menu/acData_ingame" grayout="func/DisabledRetryAssemble" autoHide="false"/> <!-- インゲーム用の機体データ画面を使用 -->
+</MenuLauncher>

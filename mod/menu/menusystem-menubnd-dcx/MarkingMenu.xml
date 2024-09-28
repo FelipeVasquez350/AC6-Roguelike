@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher resource="02_Marking_Top" title="MARKING" bgCameraCtrl="false">
+	<!-- HEAD  中央     --><Cmd captionID="212401" helpID="212000" id="1"  url="menu/markSelect?slot=1"  content="Player/Marking?slot=1"/>
+	<!--                --><NullCmd/>
+	<!--                --><NullCmd/>
+	<!--                --><NullCmd/>
+	<!--                --><NullCmd/>
+	<!--                --><NullCmd/>
+
+	<!-- CORE メイン    --><Cmd captionID="212411" helpID="212000" id="11" url="menu/markSelect?slot=11" content="Player/Marking?slot=11"/>
+	<!--                --><NullCmd/>
+	<!--                --><NullCmd/>
+	<!--                --><NullCmd/>
+	<!--                --><NullCmd/>
+	<!--                --><NullCmd/>
+
+	<!-- ARMS 右腕 前面 --><Cmd captionID="212421" helpID="212000" id="21" url="menu/markSelect?slot=21" content="Player/Marking?slot=21"/>
+	<!-- ARMS 左腕 前面 --><Cmd captionID="212431" helpID="212000" id="31" url="menu/markSelect?slot=31" content="Player/Marking?slot=31"/>
+	<!--                --><NullCmd/>
+	<!--                --><NullCmd/>
+	<!--                --><NullCmd/>
+	<!--                --><NullCmd/>
+
+	<!-- LEGS 右脚 前面 --><Cmd captionID="212451" helpID="212000" id="51" url="menu/markSelect?slot=51" content="Player/Marking?slot=51"/>
+	<!-- LEGS 左脚 前面 --><Cmd captionID="212461" helpID="212000" id="61" url="menu/markSelect?slot=61" content="Player/Marking?slot=61"/>
+	<!--                --><NullCmd/>
+	<!--                --><NullCmd/>
+	<!--                --><NullCmd/>
+	<!--                --><NullCmd/>
+</MenuLauncher>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher resource="01_GarageTopMenu" titleID="100000" cancelDisable="true" propertyLayout="50000" systemMenu="true" mercenaryDetails="true">
+
+	<!--【メモ：カメラID】1:左下側からの煽り(AC) / 2：武器ハンガー(SHOP) / 3：右側やや俯瞰(PAINT) / 10：真正面(旧PILOT) / / 12:左後方背面(SORTIE) -->
+
+	<!-- DESIGN -->
+	<Group captionID="102002"
+	 onclick="changeCamera/eventFlag=5001,camIdx=1" onfocus="changeCamera/eventFlag=5011,camIdx=0" onreturn="changeCamera/eventFlag=5011,camIdx=0"
+	 resource="01_GarageSubMenu" autoHide="false" expandable="true">
+	 	<!-- ASSEMBLY  --><Cmd captionID="102001" display="unlockParam/10010" url="menu/equipForGarage" icon="proxy/newOwnParts" preexec="util/preEquipMenu" autoHide="false"/>
+		<!-- PAINT         --><Cmd  captionID="111001"  display="unlockParam/10020"  url="menu/coloring"   preexec="util/preDecorationMenu" autoHide="false"/>
+		<!-- DECAL         --><Cmd  captionID="111003"  display="unlockParam/10022"  url="menu/decal"      preexec="util/preDecorationMenu" autoHide="false"/>
+		<!-- CUSTOM DESIGN --><Cmd  captionID="111004"  display="unlockParam/10024"  url="menu/emblemEdit" autoHide="false"/>
+		<!-- AC DATA --><Cmd captionID="102003" display="unlockParam/10030" url="menu/acData" autoHide="false"/>
+	</Group>
+	<!-- SORTIE -->
+	<Group captionID="100002"
+	 onclick="changeCamera/eventFlag=5001,camIdx=2" onfocus="changeCamera/eventFlag=5011,camIdx=0" onreturn="changeCamera/eventFlag=5011,camIdx=0"
+	 resource="01_GarageSubMenu" autoHide="false" expandable="true" display="unlockParam/10050">
+		<!-- BUY       --><Cmd captionID="103001" url="menu/partsBuy"  display="unlockParam/10051" autoHide="false" icon="proxy/newSaleParts" grayout="func/DisabledPartsBuy?alertMsg=231010"/> <!-- 231010:購入可能なパーツがありません -->
+		<!-- SELL      --><Cmd captionID="103003" url="menu/partsSell" display="unlockParam/10052" autoHide="false" />
+	</Group>
+	<!-- OS TUNING --><Cmd captionID="101001" url="menu/osUpdate" display="unlockParam/10080" preexec="util/preDecorationMenu" autoHide="false"/>
+	<!-- ARENA          --><Cmd captionID="104000" url="menu/arena" display="unlockParam/10063" icon="proxy/newArenaRanker" autoHide="false"/>
+	<!-- ONLINE ARENA   --><Cmd captionID="100005" url="menu/onlineArena" display="unlockParam/10062" preexec="util/preOnlineArena" grayout="func/IsGrayoutOnlineArena"/>
+	<!-- 空行 -->
+	<NullCmd />
+	<!-- <Cmd captionID="103005" onclick="eventFlag/5501?value=1" />
+	<Group captionID="103004" grayout="eventFlag/5501?value=0" resource="01_GarageSubMenu" expandable="true">
+		<Cmd captionID="103002" onclick="eventFlag/5500?value=1" />
+	</Group> -->	
+	<!-- <Cmd caption = "Challenge Debug Menu" onclick="changeCamera/eventFlag=5001,camIdx=12" onfocus="changeCamera/eventFlag=5011,camIdx=0" onreturn="changeCamera/eventFlag=5011,camIdx=0" url="menu/launcher?layout=ModMenu" expandable="true" display="false"/> 
+	<NullCmd/>-->
+	<!-- SORTIE -->
+	<Group  captionID="100004"
+	 onclick="changeCamera/eventFlag=5001,camIdx=3" onfocus="changeCamera/eventFlag=5011,camIdx=0" onreturn="changeCamera/eventFlag=5011,camIdx=0"
+	 icon="proxy/newStoryMissions" resource="01_GarageSubMenu" autoHide="false" expandable="true">
+		<!-- ブリーフィングムービー再生時に camIdx=10 に変更、下記項目へ復帰時 camIdx=12 に戻す ＞ [FNR-19914] 【FNR】ガレージにてミッション選択時のブリーフィング再生前に専用のカメラに 切り替えられるように対応する -->
+		<!-- MISSION        --><Cmd captionID="104001" url="menu/storyMission" display="unlockParam/10071" grayout="eventFlag/3135?value=0,alertMsg=1040" onreturn="changeCamera/camIdx=3" icon="proxy/newStoryMissions" autoHide="false"/>
+		<!-- REPLAY MISSION --><Cmd captionID="104003" url="menu/freeMission" display="unlockParam/10072"  onreturn="changeCamera/camIdx=3" grayout="func/DisabledFreeMission?alertMsg=104000" autoHide="false"/>
+		<!-- TRANING     <Cmd captionID="104010"  display="unlockParam/10100" url="menu/trainingMission" onreturn="changeCamera/camIdx=3" icon="proxy/newTraining" /> -->
+		<!-- AC TEST        --><Cmd captionID="102004" display="unlockParam/10040" url="menu/acTest" autoHide="false"/>
+	</Group>
+	
+
+</MenuLauncher>

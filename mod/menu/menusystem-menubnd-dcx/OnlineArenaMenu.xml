@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher resource="02_OnlineArena_Top" titleID="100005" menuID="OnlineArena" propertyLayout="150000" systemMenu="false" photoMode="false" >
+    <!-- ↓ id="xxxx" でムービーのIDを指定 -->
+	<!-- カスタムマッチ --><Cmd captionID="105006" id="7100" url="menu/playerMatch?fakeMode=0" preexec="util/preCustomMatchMenu"/>
+	<!-- ランクマッチ -->
+	<Group captionID="105010" id="7120" resource="02_SystemTop" menuID="RankMatch_Select" titleID="281114">
+    	<!-- SOLO MATCH   --><Cmd captionID="105003" url="menu/rankMatch?rule=1on1,connectingMsgID=281000,errorMsgID=281001"/>              <!-- 281000:対戦相手を探しています…, 281001:マッチングに失敗しました -->
+		<!-- TEAM MATCH   --><Cmd captionID="105004" url="menu/rankMatch?rule=team,connectingMsgID=281000,errorMsgID=281001"/>              <!-- 281000:対戦相手を探しています…, 281001:マッチングに失敗しました -->
+	</Group>
+
+	<!--PLATE--><Group captionID="105011" id="7130" resource="02_SystemTop" titleID="281115">
+		<!-- PLATE EDIT   --><Cmd captionID="105009" url="menu/namePlateSetting"/>
+		<!-- PLATE SHOP   --><Cmd captionID="105001" url="menu/namePlateShop" grayout="func/DisabledNamePlateBuy?alertMsg=234030"/> <!-- 234030:購入可能なネームプレートがありません -->
+		</Group>
+		
+	<!-- 対戦履歴       --><Cmd captionID="105002" id="7110" url="menu/matchLog?fakeMode=0"/>
+	<NullCmd/>
+	<!-- SYSTEM         --><Cmd captionID="120001" url="menu/optionTop"/>
+	
+	<!-- 仮項目隔離   -->
+	<NullCmd display="debugonly"/>
+	<Group caption="Production deletion" resource="02_SystemTop" display="debugonly">
+		<!-- SOLO MATCH   --><Cmd captionID="105003"                url="menu/rankMatch?rule=1on1,connectingMsgID=281000,errorMsgID=281001"/>              <!-- 281000:対戦相手を探しています…, 281001:マッチングに失敗しました -->
+		<!-- TEAM MATCH   --><Cmd captionID="105004"                url="menu/rankMatch?rule=team,connectingMsgID=281000,errorMsgID=281001"/>              <!-- 281000:対戦相手を探しています…, 281001:マッチングに失敗しました -->
+		<!-- PLATE EDIT   --><Cmd caption="PLATE EDIT" url="menu/namePlateSetting"/>
+		<!-- PLATE SHOP   --><Cmd caption="PLATE SHOP" url="menu/namePlateShop" grayout="func/DisabledNamePlateBuy?alertMsg=234030"/> <!-- 234030:購入可能なネームプレートがありません -->
+		<!--LEADER BOARD--><Group caption="fake LEADER BOARD">
+			<Cmd caption="SOLO MATCH" url="menu/ranking?rankType=0,fakeMode=1"/>
+			<Cmd caption="TEAM MATCH"   url="menu/ranking?rankType=1,fakeMode=1"/>
+		</Group>
+	</Group>
+</MenuLauncher>

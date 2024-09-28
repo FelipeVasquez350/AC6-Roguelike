@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher resource="01_GarageTopMenu" titleID="100000" cancelDisable="true" propertyLayout="50000" systemMenu="false" photoMode="false">
+
+	<!--【メモ：カメラID】1:左下側からの煽り(AC) / 2：武器ハンガー(SHOP) / 3：右側やや俯瞰(PAINT) / 10：真正面(旧PILOT) / / 12:左後方背面(SORTIE) -->
+	
+	<!-- ASSEMBLY -->
+	<Group captionID="100002"
+	 onclick="changeCamera/eventFlag=5001,camIdx=1" onfocus="changeCamera/eventFlag=5011,camIdx=0" onreturn="changeCamera/eventFlag=5011,camIdx=0"
+	 resource="01_GarageSubMenu" autoHide="false" expandable="true" grayout="true">
+		<!-- ASSEMBLY  --><Cmd captionID="102001" url="menu/equip" autoHide="false" grayout="true"/>
+		<!-- TRIAL FIT --><Cmd captionID="112003" url="menu/tryonShop" autoHide="false" grayout="true"/>
+		<!-- BUY       --><Cmd captionID="103001" url="menu/partsBuy"  autoHide="false" grayout="true"/>
+		<!-- SELL      --><Cmd captionID="103003" url="menu/partsSell" autoHide="false" grayout="true"/>
+		<!-- OS TUNING --><Cmd captionID="101001" url="menu/osUpdate" autoHide="false" grayout="true"/>
+		<!-- AC TEST        --><Cmd captionID="102004" url="menu/acTest" autoHide="false" grayout="true"/>
+	</Group>
+
+	<!-- APPEARANCE -->
+	<Group captionID="102002"
+	 onclick="changeCamera/eventFlag=5001,camIdx=3" onfocus="changeCamera/eventFlag=5011,camIdx=0" onreturn="changeCamera/eventFlag=5011,camIdx=0"
+	 resource="01_GarageSubMenu" autoHide="false" expandable="true" grayout="true">
+		<!-- PAINT         --><Cmd  captionID="111001"  url="menu/coloring" autoHide="false" grayout="true"/>
+		<!-- DECAL         --><Cmd  captionID="111003"  url="menu/decal" autoHide="false" grayout="true"/>
+		<!-- CUSTOM DESIGN --><Cmd  captionID="111004"  url="menu/emblemEdit"  autoHide="false" grayout="true"/>
+	</Group>
+
+	<!-- AC DATA -->
+	<Cmd captionID="102003" url="menu/acData" autoHide="false"/>
+	
+	<!-- 空行 -->
+	<NullCmd/>
+	
+	<!-- SORTIE -->
+	<Group  captionID="100004"
+	 onclick="changeCamera/eventFlag=5001,camIdx=12" onfocus="changeCamera/eventFlag=5011,camIdx=0" onreturn="changeCamera/eventFlag=5011,camIdx=0"
+	 resource="01_GarageSubMenu" autoHide="false" expandable="true">
+		<!-- ブリーフィングムービー再生時に camIdx=10 に変更、下記項目へ復帰時 camIdx=12 に戻す ＞ [FNR-19914] 【FNR】ガレージにてミッション選択時のブリーフィング再生前に専用のカメラに 切り替えられるように対応する -->
+		<!-- MISSION        --><Cmd captionID="104001" url="menu/storyMission"                                     onreturn="changeCamera/camIdx=12" autoHide="false" grayout="true"/>
+		<!-- REPLAY MISSION --><Cmd captionID="104003" url="menu/debugMission?minID=9250,maxID=9254,missionType=0" onreturn="changeCamera/camIdx=12" autoHide="false"/>
+
+		<!-- ARENA          --><Cmd captionID="104000" url="menu/arena"           autoHide="false" grayout="true"/>
+		<!-- TRANING        --><Cmd captionID="104010" url="menu/trainingMission" autoHide="false" grayout="true"/>
+		<!-- ONLINE ARENA   --><Cmd captionID="100005" url="menu/launcher?layout=OnlineArenaMenu" grayout="true"/>
+	</Group>
+</MenuLauncher>

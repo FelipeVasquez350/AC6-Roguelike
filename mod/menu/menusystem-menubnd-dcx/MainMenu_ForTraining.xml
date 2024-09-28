@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher resource="01_MainMenu" titleID="120000"  menuID="MainTop">
+	<!-- RETRY --><Cmd captionID="120030" url="util/retryMission_fromStart?msgID=120030" autoHide="false"/>
+	<!-- SYSTEM        --><Cmd captionID="120001" url="menu/optionTop" autoHide="false"/>
+	<!-- QUIT        --><Cmd captionID="120031" url="util/returnToGarage?msgID=120031" execOnce="true" autoHide="false"/>
+</MenuLauncher>

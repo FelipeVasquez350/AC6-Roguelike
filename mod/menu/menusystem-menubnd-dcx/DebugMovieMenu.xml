@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher>
+	<Cmd caption="   1 オープニング"                 url="util/moviePlayer?id=1"/>
+	<Cmd caption="   2 エンディング"                 url="util/moviePlayer?id=2"/>
+	<Cmd caption="   5 インゲーム中"                 url="util/moviePlayer?id=5"/>
+	<Cmd caption="  11 「ベイラム」ブリーフィング"   url="util/moviePlayer?id=11"/>
+	<Cmd caption="  12 AC端末と、買物端末"           url="util/moviePlayer?id=12"/>
+	<Cmd caption="  13 PC端末（通信中）"             url="util/moviePlayer?id=13"/>
+	<Cmd caption="  14 PC端末（待機中）と、出撃端末" url="util/moviePlayer?id=14"/>
+	<Cmd caption="7000 タイトルムービー"             url="util/moviePlayer?id=7000"/>
+	<Cmd caption="9999 字幕テスト"                   url="util/moviePlayer?id=9999"/>
+	<Cmd caption="20100 プロローグブリーフィング"     url="util/moviePlayer?id=20100"/>
+</MenuLauncher>

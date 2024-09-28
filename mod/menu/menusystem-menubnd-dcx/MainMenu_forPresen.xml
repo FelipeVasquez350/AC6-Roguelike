@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher resource="01_MainMenu" titleID="120000" menuID="MainTop" photoMode="false" systemMenu="false">
+	<!-- RETRY FROM CHECKPOINT --><Cmd captionID="254011" url="util/retryMission_fromCheckPoint" grayout="func/DisabledRetryMissionFromCheckPoint" autoHide="false"/>
+	<!-- RETRY MISSION         --><Cmd captionID="254010" url="util/retryMission_fromStart" autoHide="false"/>
+	<!-- RETIRE                --><Cmd captionID="254012" url="util/retireMission"               grayout="func/DisabledRetireMission" autoHide="false"/>
+</MenuLauncher>

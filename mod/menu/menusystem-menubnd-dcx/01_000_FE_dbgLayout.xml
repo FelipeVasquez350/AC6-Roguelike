@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Widgets>
+    <Widget Name="AP 文字" Path="PlayerHUD/Gauge/AP_Label"/>
+    <Widget Name="AP 数値" Path="PlayerHUD/Gauge/AP_NumValue" ColorPath="Fade/Normal"/>
+    <Widget Name="AP ダメージ" Path="PlayerHUD/Effect/AP_Damage" ColorPath="null"/>
+    <Widget Name="AP ゲージ" Path="PlayerHUD/Gauge/AP_Gauge" ColorPath="Fade/Normal;Fade/Outline"/>
+    <Widget Name="EN 文字" Path="PlayerHUD/Gauge/EN_Label" />
+    <Widget Name="EN ゲージ" Path="PlayerHUD/Gauge/EN_Gauge" ColorPath="Fade/Normal;Fade/Outline" />
+    <Widget Name="AA ゲージ" Path="PlayerHUD/Gauge/AA_Gauge" />
+    <Widget Name="衝撃値ゲージ" Path="PlayerHUD/Gauge/Stagger"/>
+    <Widget Name="右手武器"  Path="PlayerHUD/EquipmentPanel/HandR/Active" />
+    <Widget Name="左手武器"  Path="PlayerHUD/EquipmentPanel/HandL/Active" />
+    <Widget Name="右肩武器"  Path="PlayerHUD/EquipmentPanel/BackR" />
+    <Widget Name="左肩武器"  Path="PlayerHUD/EquipmentPanel/BackL" />
+    <Widget Name="ウォールハック" Path="PlayerHUD/Gauge/WallHack" />
+    <Widget Name="回復アイテム" Path="PlayerHUD/Gauge/Repair" />
+    <Widget Name="リミッターリリース" Path="PlayerHUD/Gauge/LimiterRelease" />
+    <Widget Name="レーダー" Path="RingRadar"/>
+    <Widget Name="残り時間" Path="TimeLimit"/>
+</Widgets>

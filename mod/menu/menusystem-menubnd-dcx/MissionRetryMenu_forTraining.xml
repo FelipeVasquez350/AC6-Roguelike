@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher resource="01_MainMenu" titleID="120032" cancelDisable="true" menuID="MissionRetry" photoMode="false">
+	<!-- RETRY  --><Cmd captionID="120030" url="util/retryMission_fromStart?msgID=120030" autoHide="false"/>
+	<!-- QUIT   --><Cmd captionID="120031" url="util/retireMission?msgID=120031"          autoHide="false"/>
+</MenuLauncher>

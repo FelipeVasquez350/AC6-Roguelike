@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher resource="01_MainMenu" titleID="280312" menuID="MainTop" photoMode="false">
+	<!-- RETURN TO ROOM --><Cmd captionID="120100" url="util/returnToRoom" display="audienceOnly" autoHide="false"/>
+	<!-- SYSTEM         --><Cmd captionID="120001" url="menu/optionTop" autoHide="false"/>
+</MenuLauncher>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher resource="01_MainMenu" titleID="120000" menuID="MainTop">
+	<!-- RETRY FROM CHECKPOINT --><Cmd captionID="120004" url="util/retryMission_fromCheckPoint?msgID=120004" grayout="func/DisabledRetryMissionFromCheckPoint" autoHide="false"/>
+	<!-- RETRY MISSION         --><Cmd captionID="120002" url="util/retryMission_fromStart?msgID=120002" autoHide="false"/>
+	<!-- RETIRE                --><Cmd captionID="120003" url="util/retireMission?msgID=120003"               grayout="func/DisabledRetireMission" autoHide="false"/>
+	<!-- SYSTEM                --><Cmd captionID="120001" url="menu/optionTop" autoHide="false"/>
+
+	<!-- 以下 game.properties で MenuMan.EnableTopMenuDebug = true の時のみ -->
+	<Cmd caption="GARAGE(DEBUG)"   url="menu/garageTop" display="debugonly"/>
+</MenuLauncher>

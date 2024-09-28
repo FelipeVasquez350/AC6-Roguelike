@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MenuLauncher resource="01_GarageTopMenu" title="Roguelike Challenge DEBUG MENU">
+    <Group caption="Flag Status" resource="01_GarageSubMenu" autoHide="false" expandable="true">
+        <Cmd caption="9900" grayout="eventFlag/9900?value=0" />
+        <Cmd caption="Reset flag 9900" onclick="eventFlag/9900?value=0" />        
+        <Cmd caption="Set flag 9900" onclick="eventFlag/9900?value=1" />            
+        
+        <Cmd caption="9980" grayout="eventFlag/9980?value=0" />
+        <Cmd caption="Reset flag 9980" onclick="eventFlag/9980?value=0" />        
+        <Cmd caption="Set flag 9980" onclick="eventFlag/9980?value=1" />        
+        
+        <Cmd caption="9999" grayout="eventFlag/9999?value=0" />
+        <Cmd caption="Reset flag 9999" onclick="eventFlag/9999?value=0" />              
+    </Group>
+    <Group caption="Missions Status" resource="01_GarageSubMenu" autoHide="false" expandable="true">
+        <!-- STAGE 1 -->
+        <Cmd caption="Destroy Artillery Installations" grayout="eventFlag/9901?value=0" />
+        <Cmd caption="Reset flag 9901" onclick="eventFlag/9901?value=0" />
+        <NullCmd/>
+        <Cmd caption="Grid 135 Cleanup" grayout="eventFlag/9902?value=0" />
+        <Cmd caption="Reset flag 9902" onclick="eventFlag/9902?value=0" />
+        <NullCmd/>
+        <Cmd caption="Destroy the Transport Helicopters" grayout="eventFlag/9903?value=0" />
+        <Cmd caption="Reset flag 9903" onclick="eventFlag/9903?value=0" />
+        <NullCmd/>
+        <Cmd caption="Destroy the Tester AC" grayout="eventFlag/9904?value=0" />
+        <Cmd caption="Reset flag 9904" onclick="eventFlag/9904?value=0" />
+        <NullCmd/>
+        <Cmd caption="Attack the Dam Complex" grayout="eventFlag/9905?value=0" />
+        <Cmd caption="Reset flag 9905" onclick="eventFlag/9905?value=0" />
+        <NullCmd/>
+        <Cmd caption="Destroy the Weaponized Mining Ship" grayout="eventFlag/9906?value=0" />
+        <Cmd caption="Reset flag 9906" onclick="eventFlag/9906?value=0" />
+        <NullCmd/>
+        <Cmd caption="Operation Wallclimber" grayout="eventFlag/9907?value=0" />
+        <Cmd caption="Reset flag 9907" onclick="eventFlag/9907?value=0" />
+        <NullCmd/>
+        <!-- STAGE 2 -->
+        <Cmd caption="Retrieve Combat Logs" grayout="eventFlag/9908?value=0" />
+        <Cmd caption="Reset flag 9908" onclick="eventFlag/9908?value=0" />
+        <NullCmd/>
+        <Cmd caption="Investigate BAWS Arsenal No. 2" grayout="eventFlag/9909?value=0" />
+        <Cmd caption="Reset flag 9909" onclick="eventFlag/9909?value=0" />
+        <NullCmd/>
+        <Cmd caption="Attack the Watchpoint" grayout="eventFlag/9910?value=0" />
+        <Cmd caption="Reset flag 9910" onclick="eventFlag/9910?value=0" />
+        <NullCmd/>
+        <Cmd caption="Infiltrate Grid 086" grayout="eventFlag/9911?value=0" />
+        <Cmd caption="Reset flag 9911" onclick="eventFlag/9911?value=0" />
+        <NullCmd/>
+        <Cmd caption="Eliminate the Doser Faction" grayout="eventFlag/9912?value=0" />
+        <Cmd caption="Reset flag 9912" onclick="eventFlag/9912?value=0" />
+        <NullCmd/>
+        <Cmd caption="Ocean Crossing" grayout="eventFlag/9913?value=0" />
+        <Cmd caption="Reset flag 9913" onclick="eventFlag/9913?value=0" />
+        <NullCmd/>
+        <Cmd caption="Steal the Survey Data" grayout="eventFlag/9914?value=0" />
+        <Cmd caption="Reset flag 9914" onclick="eventFlag/9914?value=0" />
+        <NullCmd/>
+        <!-- STAGE 3 -->
+        <Cmd caption="Attack the Refueling Base" grayout="eventFlag/9915?value=0" />
+        <Cmd caption="Reset flag 9915" onclick="eventFlag/9915?value=0" />
+        <NullCmd/>
+        <Cmd caption="Eliminate V VII" grayout="eventFlag/9916?value=0" />
+        <Cmd caption="Reset flag 9916" onclick="eventFlag/9916?value=0" />
+        <NullCmd/>
+        <Cmd caption="Tunnel Sabotage" grayout="eventFlag/9917?value=0" />
+        <Cmd caption="Reset flag 9917" onclick="eventFlag/9917?value=0" />
+        <NullCmd/>
+        <Cmd caption="Survey the Uninhabited Floating City" grayout="eventFlag/9918?value=0" />
+        <Cmd caption="Reset flag 9918" onclick="eventFlag/9918?value=0" />
+        <NullCmd/>
+        <Cmd caption="Heavy Missile Launch Support" grayout="eventFlag/9919?value=0" />
+        <Cmd caption="Reset flag 9919" onclick="eventFlag/9919?value=0" />
+        <NullCmd/>
+        <Cmd caption="Eliminate the Enforcement Squads" grayout="eventFlag/9920?value=0" />
+        <Cmd caption="Reset flag 9920" onclick="eventFlag/9920?value=0" />
+        <NullCmd/>
+        <Cmd caption="Destroy the Special Forces Craft" grayout="eventFlag/9921?value=0" />
+        <Cmd caption="Reset flag 9921" onclick="eventFlag/9921?value=0" />
+        <NullCmd/>
+        <Cmd caption="Attack the Old Spaceport" grayout="eventFlag/9922?value=0" />
+        <Cmd caption="Reset flag 9922" onclick="eventFlag/9922?value=0" />
+        <NullCmd/>        
+        <!-- STAGE 4 -->
+        <Cmd caption="Eliminate 'Honest' Brute" grayout="eventFlag/9923?value=0" />
+        <Cmd caption="Reset flag 9923" onclick="eventFlag/9923?value=0" />
+        <NullCmd/>
+        <Cmd caption="Defend the Old Spaceport" grayout="eventFlag/9924?value=0" />
+        <Cmd caption="Reset flag 9924" onclick="eventFlag/9924?value=0" />
+        <NullCmd/>
+        <Cmd caption="Historic Data Recovery" grayout="eventFlag/9925?value=0" />
+        <Cmd caption="Reset flag 9925" onclick="eventFlag/9925?value=0" />
+        <NullCmd/>
+        <Cmd caption="Destroy the Ice Worm" grayout="eventFlag/9926?value=0" />
+        <Cmd caption="Reset flag 9926" onclick="eventFlag/9926?value=0" />
+        <NullCmd/>
+        <Cmd caption="Underground Exploration - Depth 1" grayout="eventFlag/9927?value=0" />
+        <Cmd caption="Reset flag 9927" onclick="eventFlag/9927?value=0" />
+        <NullCmd/>
+        <Cmd caption="Underground Exploration - Depth 2" grayout="eventFlag/9928?value=0" />
+        <Cmd caption="Reset flag 9928" onclick="eventFlag/9928?value=0" />
+        <NullCmd/>
+        <Cmd caption="Underground Exploration - Depth 3" grayout="eventFlag/9929?value=0" />
+        <Cmd caption="Reset flag 9929" onclick="eventFlag/9929?value=0" />
+        <NullCmd/>
+        <!-- STAGE 5 -->
+        <Cmd caption="Intercept the Redguns " grayout="eventFlag/9930?value=0" />
+        <Cmd caption="Reset flag 9930" onclick="eventFlag/9930?value=0" />
+        <NullCmd/>
+        <Cmd caption="Ambush the Vespers" grayout="eventFlag/9931?value=0" />
+        <Cmd caption="Reset flag 9931" onclick="eventFlag/9931?value=0" />
+        <NullCmd/>
+        <Cmd caption="Unknown Territory Survey" grayout="eventFlag/9932?value=0" />
+        <Cmd caption="Reset flag 9932" onclick="eventFlag/9932?value=0" />
+        <NullCmd/>
+        <Cmd caption="Reach the Coral Convergence" grayout="eventFlag/9933?value=0" />
+        <Cmd caption="Reset flag 9933" onclick="eventFlag/9933?value=0" />
+        <NullCmd/>
+        <Cmd caption="Escape" grayout="eventFlag/9934?value=0" />
+        <Cmd caption="Reset flag 9934" onclick="eventFlag/9934?value=0" />
+        <NullCmd/>
+        <Cmd caption="Take the Uninhabited Floating City" grayout="eventFlag/9935?value=0" />
+        <Cmd caption="Reset flag 9935" onclick="eventFlag/9935?value=0" />
+        <NullCmd/>
+        <Cmd caption="Intercept the Corporate" grayout="eventFlag/9936?value=0" />
+        <Cmd caption="Reset flag 9936" onclick="eventFlag/9936?value=0" />
+        <NullCmd/>
+        <Cmd caption="Eliminate 'Cinder' Carla" grayout="eventFlag/9937?value=0" />
+        <Cmd caption="Reset flag 9937" onclick="eventFlag/9937?value=0" />
+        <NullCmd/>
+        <Cmd caption="Breach the Karman Line" grayout="eventFlag/9938?value=0" />
+        <Cmd caption="Reset flag 9938" onclick="eventFlag/9938?value=0" />
+        <NullCmd/>
+        <Cmd caption="Destroy the Drive Block" grayout="eventFlag/9939?value=0" />
+        <Cmd caption="Reset flag 9939" onclick="eventFlag/9939?value=0" />
+        <NullCmd/>
+        <Cmd caption="Shut down the Closure Satellites" grayout="eventFlag/9940?value=0" />
+        <Cmd caption="Reset flag 9940" onclick="eventFlag/9940?value=0" />
+        <NullCmd/>
+        <Cmd caption="Bring down the Xylem" grayout="eventFlag/9941?value=0" />
+        <Cmd caption="Reset flag 9941" onclick="eventFlag/9941?value=0" />
+        <NullCmd/>
+        <!-- STAGE 5 >:) -->
+        <Cmd caption="Attack the Dam Complex ALT" grayout="eventFlag/9942?value=0" />
+        <Cmd caption="Reset flag 9942" onclick="eventFlag/9942?value=0" />
+        <NullCmd/>
+        <Cmd caption="Prevent Corporate Salvage of New Tech" grayout="eventFlag/9943?value=0" />
+        <Cmd caption="Reset flag 9943" onclick="eventFlag/9943?value=0" />
+        <NullCmd/>
+        <Cmd caption="Defend the Dam Complex" grayout="eventFlag/9944?value=0" />
+        <Cmd caption="Reset flag 9944" onclick="eventFlag/9944?value=0" />
+        <NullCmd/>
+        <Cmd caption="Escort the Weaponized Mining Ship" grayout="eventFlag/9945?value=0" />
+        <Cmd caption="Reset flag 9945" onclick="eventFlag/9945?value=0" />
+        <NullCmd/>
+        <Cmd caption="Prisoner Rescue" grayout="eventFlag/9946?value=0" />
+        <Cmd caption="Reset flag 9946" onclick="eventFlag/9946?value=0" />
+        <NullCmd/>
+        <Cmd caption="Obstruct the Mandatory Inspection" grayout="eventFlag/9947?value=0" />
+        <Cmd caption="Reset flag 9947" onclick="eventFlag/9947?value=0" />
+        <NullCmd/>
+        <Cmd caption="Stop the Secret Data Breach" grayout="eventFlag/9948?value=0" />
+        <Cmd caption="Reset flag 9948" onclick="eventFlag/9948?value=0" />
+        <NullCmd/>
+        <Cmd caption="Coral Export Denial" grayout="eventFlag/9949?value=0" />
+        <Cmd caption="Reset flag 9949" onclick="eventFlag/9949?value=0" />
+        <NullCmd/>        
+        <Cmd caption="MIA" grayout="eventFlag/9950?value=0" />
+        <Cmd caption="Reset flag 9950" onclick="eventFlag/9950?value=0" />
+        <NullCmd/>        
+        <Cmd caption="Regain Control of the Xylem" grayout="eventFlag/9951?value=0" />
+        <Cmd caption="Reset flag 9951" onclick="eventFlag/9951?value=0" />
+        <NullCmd/>        
+        <Cmd caption="Coral Release" grayout="eventFlag/9952?value=0" />
+        <Cmd caption="Reset flag 9952" onclick="eventFlag/9952?value=0" />
+        <NullCmd/>
+    </Group>
+</MenuLauncher>
