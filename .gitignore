@@ -405,7 +405,6 @@ FodyWeavers.xsd
 *.prev
 /mod/project.json
 /esd_dumps_py
-
 !bin/Debug/net8.0-windows/dist
 !bin/Debug/net8.0-windows/oo2core_8_win64.dll
-	
+
